@@ -1,6 +1,9 @@
 name: Paylas
 
 on:
+  push:
+    branches: [main]
+    paths: ["tetik.txt"]   # bulut görevi her gün 18:05 bu dosyayı günceller
   schedule:
     - cron: "23,53 * * * *"   # saatte iki kez (yoğun olmayan dakikalar); zamanı gelen gönderi varsa paylaşır
   workflow_dispatch:
