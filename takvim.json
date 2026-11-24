@@ -1,5 +1,5 @@
 [
-  {"id": "005", "zaman": "2026-11-26T19:00:00+03:00", "klasor": "gonderiler/005", "hikaye": true},
-  {"id": "006", "zaman": "2026-11-28T19:00:00+03:00", "klasor": "gonderiler/006", "hikaye": true},
-  {"id": "007", "zaman": "2026-11-30T19:00:00+03:00", "klasor": "gonderiler/007", "hikaye": true}
+  {"id": "005", "zaman": "2026-11-24T17:30:00+03:00", "klasor": "gonderiler/005", "hikaye": true},
+  {"id": "006", "zaman": "2026-11-25T19:00:00+03:00", "klasor": "gonderiler/006", "hikaye": true},
+  {"id": "007", "zaman": "2026-11-26T19:00:00+03:00", "klasor": "gonderiler/007", "hikaye": true}
 ]
