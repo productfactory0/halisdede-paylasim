@@ -2,7 +2,7 @@ name: Paylas
 
 on:
   schedule:
-    - cron: "5 * * * *"   # her saat başı +5 dk (UTC); zamanı gelen gönderi varsa paylaşır
+    - cron: "23,53 * * * *"   # saatte iki kez (yoğun olmayan dakikalar); zamanı gelen gönderi varsa paylaşır
   workflow_dispatch:
     inputs:
       deneme:
