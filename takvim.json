@@ -1,5 +1,6 @@
 [
   {"id": "005", "zaman": "2026-11-24T17:30:00+03:00", "klasor": "gonderiler/005", "hikaye": true},
   {"id": "006", "zaman": "2026-11-25T18:00:00+03:00", "klasor": "gonderiler/006", "hikaye": true},
-  {"id": "007", "zaman": "2026-11-26T18:00:00+03:00", "klasor": "gonderiler/007", "hikaye": true}
+  {"id": "A01", "zaman": "2026-11-26T18:00:00+03:00", "klasor": "gonderiler/A01", "hikaye": true},
+  {"id": "007", "zaman": "2026-11-27T18:00:00+03:00", "klasor": "gonderiler/007", "hikaye": true}
 ]
