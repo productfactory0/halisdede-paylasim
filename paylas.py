@@ -142,9 +142,8 @@ def main():
 if __name__ == "__main__":
     try:
         main()
-        (ROOT / "son-hata.txt").write_text("yok
-", encoding="utf-8")
+        (ROOT / "son-hata.txt").write_text("yok" + chr(10), encoding="utf-8")
     except Exception as e:  # noqa: BLE001  (anahtar mesajlarda yer almaz, api() onu yazdırmaz)
-        (ROOT / "son-hata.txt").write_text(f"{datetime.now(timezone.utc).isoformat(timespec='seconds')} {type(e).__name__}: {str(e)[:400]}
-", encoding="utf-8")
+        zaman = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        (ROOT / "son-hata.txt").write_text(f"{zaman} {type(e).__name__}: {str(e)[:400]}" + chr(10), encoding="utf-8")
         raise
