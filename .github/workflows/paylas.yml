@@ -42,10 +42,10 @@ jobs:
       - name: Durumu kaydet
         if: always()
         run: |
-          if [ -n "$(git status --porcelain durum.json)" ]; then
+          if [ -n "$(git status --porcelain durum.json son-hata.txt)" ]; then
             git config user.name "paylasim-botu"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add durum.json
+            git add durum.json son-hata.txt
             git commit -m "Paylasim durumu"
             git push
           fi

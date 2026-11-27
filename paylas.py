@@ -136,8 +136,15 @@ def main():
         durum_f.write_text(json.dumps(durum, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         break  # bir çalışmada en fazla bir gönderi
     if hata:
-        sys.exit(1)
+        raise RuntimeError("paylaşım hatası (yukarıdaki [HATA] satırı)")
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+        (ROOT / "son-hata.txt").write_text("yok
+", encoding="utf-8")
+    except Exception as e:  # noqa: BLE001  (anahtar mesajlarda yer almaz, api() onu yazdırmaz)
+        (ROOT / "son-hata.txt").write_text(f"{datetime.now(timezone.utc).isoformat(timespec='seconds')} {type(e).__name__}: {str(e)[:400]}
+", encoding="utf-8")
+        raise
